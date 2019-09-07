@@ -1,0 +1,12 @@
+name: Blogtheme
+type: theme
+description: 'Theme for blog.'
+core: 8.x
+libraries:
+  - blogtheme/global-styling
+base theme: stable
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer

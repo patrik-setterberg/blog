@@ -1,0 +1,20 @@
+uuid: f38c3ad1-6926-48ad-a698-7fa72f48a00f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - blogtheme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: blogtheme_page_title
+theme: blogtheme
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

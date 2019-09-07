@@ -1,0 +1,14 @@
+uuid: 19aea8e4-2770-4946-bcf0-ca803d011f49
+name: devblog
+mail: admin@devblog.temp
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
