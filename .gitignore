@@ -25,3 +25,9 @@
 
 # Ignore private notes
 notes.txt
+
+# Ignore installed theme packages
+/web/themes/custom/blogtheme/node_modules/
+
+# Ignore built css
+/web/themes/custom/blogtheme/build/*

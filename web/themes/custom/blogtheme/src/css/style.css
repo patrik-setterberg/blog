@@ -1,0 +1,15 @@
+img {
+    filter: grayscale(0.8);
+}
+
+a {
+    color: black;
+
+    &:hover {
+        color: red;
+    }
+}
+
+body {
+    background-color: brown;
+}
