@@ -1,0 +1,19 @@
+body {
+    background-color: brown;
+}
+
+
+img {
+    -webkit-filter: grayscale(0.8);
+            filter: grayscale(0.8);
+}
+
+a {
+    color: black;
+    font-size: 14px
+}
+
+a:hover {
+        color: red;
+    }
+

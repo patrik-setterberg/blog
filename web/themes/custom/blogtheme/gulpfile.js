@@ -22,7 +22,6 @@ gulp.task('watch', function () {
 
 function defaultTask(cb) {
 
-    // code
     cb();
 }
 exports.default = defaultTask
