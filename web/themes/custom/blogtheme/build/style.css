@@ -1,19 +1,36 @@
+
+/* Media */
 body {
     background-color: brown;
 }
-
-
 img {
+
     -webkit-filter: grayscale(0.8);
+
             filter: grayscale(0.8);
+    border: 5px solid white;
+    transition: -webkit-filter 0.9s ease;
+    transition: filter 0.9s ease;
+    transition: filter 0.9s ease, -webkit-filter 0.9s ease
 }
-
-a {
-    color: black;
-    font-size: 14px
-}
-
-a:hover {
-        color: red;
+img:hover {
+        border: 5px solid green;
+        -webkit-filter: unset;
+                filter: unset;
     }
-
+a {
+    color: black
+}
+a:hover {
+        color: #fff;
+    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    a, a:visited {
+        color: yellow;
+    }
+}
+@media only screen and (max-width: 768px) {
+    a, a:visited {
+        color: orange;
+    }
+}

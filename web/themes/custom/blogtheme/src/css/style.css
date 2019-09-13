@@ -1,18 +1,2 @@
-body {
-    background-color: brown;
-}
-
-
-img {
-    filter: grayscale(0.8);
-}
-
-a {
-    color: black;
-    font-size: 14px;
-
-    &:hover {
-        color: red;
-    }
-}
-
+@import "variables.css";
+@import "base.css";

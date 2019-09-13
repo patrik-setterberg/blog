@@ -1,0 +1,39 @@
+body {
+    background-color: brown;
+}
+
+
+img {
+    --border-width: 5px;
+
+    filter: grayscale(0.8);
+    border: var(--border-width) solid white;
+    transition: filter 0.9s ease;
+
+    &:hover {
+        border: var(--border-width) solid green;
+        filter: unset;
+    }
+}
+
+
+a {
+    color: black;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+@media (--tablet) {
+    a, a:visited {
+        color: yellow;
+    }
+}
+
+@media (--phone) {
+    a, a:visited {
+        color: orange;
+    }
+}
+
