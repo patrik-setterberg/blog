@@ -5,7 +5,7 @@ let postcssImport = require('postcss-import');
 let autoprefixer = require('autoprefixer');
 let nesting = require('postcss-nesting');
 let variables = require('postcss-css-variables');
-
+let gradients = require('postcss-easing-gradients');
 
 gulp.task('css', function () {
 
@@ -16,6 +16,7 @@ gulp.task('css', function () {
             importFrom: '/home/spacedoc/projects/blog/web/themes/custom/blogtheme/src/css/variables.css',
         }),
         autoprefixer({grid: true}),
+        gradients,
         variables()
     ];
 

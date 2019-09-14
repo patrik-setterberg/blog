@@ -1,6 +1,7 @@
 body {
-    background-color: brown;
+    background: linear-gradient(to right, #00a6e8, ease, blue);
 }
+
 
 
 img {
