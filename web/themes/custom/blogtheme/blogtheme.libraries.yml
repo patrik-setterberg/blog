@@ -3,3 +3,7 @@ global-styling:
   css:
     theme:
       build/style.css: {}
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,700'

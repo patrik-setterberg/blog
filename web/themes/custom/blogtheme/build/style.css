@@ -1,8 +1,12 @@
 /* Media */
 /* Typography */
 /* Colors */
+* {
+    box-sizing: border-box;
+}
 body {
     background: linear-gradient(to right, hsl(197.07, 100%, 45.49%), hsl(198.13, 100%, 45.68%) 5.79%, hsl(199.92, 100%, 46%) 10.88%, hsl(202.33, 100%, 46.42%) 15.63%, hsl(205.26, 100%, 46.91%) 20.37%, hsl(208.61, 100%, 47.43%) 25.46%, hsl(212.31, 100%, 47.97%) 31.25%, hsl(216.32, 100%, 48.49%) 38.08%, hsl(220.58, 100%, 48.97%) 46.3%, hsl(225.09, 100%, 49.38%) 56.25%, hsl(229.82, 100%, 49.71%) 68.29%, hsl(234.79, 100%, 49.92%) 82.75%, hsl(240, 100%, 50%));
+    font-family: 'Roboto', sans-serif;
 }
 img {
 
@@ -34,4 +38,7 @@ a:hover {
     a, a:visited {
         color: orange;
     }
+}
+.img-responsive {
+    max-width: 100%;
 }

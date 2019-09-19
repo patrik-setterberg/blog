@@ -4,6 +4,7 @@ description: 'Theme for blog.'
 core: 8.x
 libraries:
   - blogtheme/global-styling
+  - blogtheme/fonts
 base theme: stable
 regions:
   header: Header
