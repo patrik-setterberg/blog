@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to right, #00a6e8, ease, blue);
 }
@@ -32,7 +36,7 @@ a {
     }
 }
 
-@media (--phone) {
+@media (--mobile) {
     a, a:visited {
         color: orange;
     }
