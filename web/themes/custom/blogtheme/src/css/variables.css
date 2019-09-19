@@ -7,8 +7,12 @@
 @custom-media --at-least-tablet only screen and (min-width: 768px);
 @custom-media --at-least-desktop only screen and (min-width: 1024px);
 
+:root {
 
-/* Typography */
+    /* Typography */
+    --font-main: 'Roboto', sans-serif;
+    --font-mono: 'Roboto Mono', monospace;
+}
 
 
 /* Colors */

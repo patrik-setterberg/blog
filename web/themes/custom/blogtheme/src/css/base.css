@@ -3,12 +3,14 @@
 }
 
 body {
+    
+
     background: linear-gradient(to right, #00a6e8, ease, blue);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-main);
 }
 
 code {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--font-mono);
 }
 
 img {
