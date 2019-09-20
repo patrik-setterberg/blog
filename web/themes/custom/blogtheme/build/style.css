@@ -1,52 +1,75 @@
-/* Media */
+/* Media variables */
 :root {
+    /* Layout */
 
     /* Typography */
+
+    /* Colors */
 }
-/* Colors */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
-    
-
-    background: linear-gradient(to right, hsl(197.07, 100%, 45.49%), hsl(198.13, 100%, 45.68%) 5.79%, hsl(199.92, 100%, 46%) 10.88%, hsl(202.33, 100%, 46.42%) 15.63%, hsl(205.26, 100%, 46.91%) 20.37%, hsl(208.61, 100%, 47.43%) 25.46%, hsl(212.31, 100%, 47.97%) 31.25%, hsl(216.32, 100%, 48.49%) 38.08%, hsl(220.58, 100%, 48.97%) 46.3%, hsl(225.09, 100%, 49.38%) 56.25%, hsl(229.82, 100%, 49.71%) 68.29%, hsl(234.79, 100%, 49.92%) 82.75%, hsl(240, 100%, 50%));
+    background-color: #f3f3f3;
     font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+@media only screen and (min-width: 1360px) {
+    .container {
+    width: 1300px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1359px) {
+    .container {
+    width: 1024px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+    width: 768px;
+    }
+}
+header {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, hsl(38.82, 100%, 50%), hsla(38.82, 100%, 50%, 0.95932) 5.79%, hsla(38.82, 100%, 50%, 0.8912) 10.88%, hsla(38.82, 100%, 50%, 0.80156) 15.63%, hsla(38.82, 100%, 50%, 0.6963) 20.37%, hsla(38.82, 100%, 50%, 0.58131) 25.46%, hsla(38.82, 100%, 50%, 0.4625) 31.25%, hsla(38.82, 100%, 50%, 0.34578) 38.08%, hsla(38.82, 100%, 50%, 0.23704) 46.3%, hsla(38.82, 100%, 50%, 0.14219) 56.25%, hsla(38.82, 100%, 50%, 0.06713) 68.29%, hsla(38.82, 100%, 50%, 0.01777) 82.75%, hsla(38.82, 100%, 50%, 0));
+}
+.site-footer {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: darkgray;
 }
 code {
     font-family: 'Roboto Mono', monospace;
 }
-img {
-
-    -webkit-filter: grayscale(0.8);
-
-            filter: grayscale(0.8);
-    border: 5px solid white;
-    transition: -webkit-filter 0.9s ease;
-    transition: filter 0.9s ease;
-    transition: filter 0.9s ease, -webkit-filter 0.9s ease
+a, a:visited {
+    text-decoration: none;
+    font-weight: 500;
 }
-img:hover {
-        border: 5px solid green;
-        -webkit-filter: unset;
-                filter: unset;
-    }
-a {
-    color: black
-}
-a:hover {
-        color: #fff;
-    }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    a, a:visited {
-        color: yellow;
-    }
+
 }
 @media only screen and (max-width: 767px) {
-    a, a:visited {
-        color: orange;
-    }
+   
 }
 .img-responsive {
     max-width: 100%;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: bold;
+}
+.emphasize {
+    font-style: italic;
 }

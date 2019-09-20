@@ -1,4 +1,4 @@
-/* Media */
+/* Media variables */
 @custom-media --mobile only screen and (max-width: 767px);
 @custom-media --tablet only screen and (min-width: 768px) and (max-width: 1023px);
 @custom-media --desktop-small only screen and (min-width: 1024px) and (max-width: 1359px);
@@ -8,11 +8,33 @@
 @custom-media --at-least-desktop only screen and (min-width: 1024px);
 
 :root {
+    /* Layout */
+    --container-width: 100%;
+
+    --default-padding: 1rem;
 
     /* Typography */
     --font-main: 'Roboto', sans-serif;
     --font-mono: 'Roboto Mono', monospace;
+
+    /* Colors */
+    --color-text-main: #333;
 }
 
+@media (--tablet) {
+    :root {
+        --container-width: 768px;
+    }   
+}
 
-/* Colors */
+@media (--desktop-small) {
+    :root {
+        --container-width: 1024px;
+    }
+}
+
+@media (--desktop-large) {
+    :root {
+        --container-width: 1300px;
+    }
+}
