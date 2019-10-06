@@ -1,0 +1,19 @@
+.main-menu {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+
+.main-menu ul li {
+    display: inline;       
+}
+
+.main-menu li a,
+.main-menu li a:visited {
+    color: var(--baby-powder);
+}
+

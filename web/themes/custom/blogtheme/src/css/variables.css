@@ -14,11 +14,25 @@
     --default-padding: 1rem;
 
     /* Typography */
-    --font-main: 'Roboto', sans-serif;
+    --font-main: 'Open Sans', sans-serif;
     --font-mono: 'Roboto Mono', monospace;
 
-    /* Colors */
-    --color-text-main: #333;
+    /* Colors: https://mycolor.space/?hex=%2300171F&sub=1 */
+    --gun-metal: #233445;
+    --deep-saffron: #f2962f;
+    --eerie-black: #1a1f16;
+    --rich-black: #00171f;
+    --rich-black-dark: #000B0F;
+    --rich-black-light: #112E38;
+    --baby-powder: #fdfffc;
+
+    --color-text-main: var(--eerie-black);
+    --color-header-background: var(--rich-black);
+    --color-header-background-top: var(--rich-black-dark);
+    --color-header-symbols: var(--rich-black-light);
+    --color-body-background: var(--baby-powder);
+
+
 }
 
 @media (--tablet) {

@@ -1,4 +1,10 @@
+
+/* base */
 @import "variables.css";
 @import "base.css";
 @import "typography.css";
 @import "utilities.css";
+
+/* components */
+@import "components/brand.css";
+@import "components/main_menu.css";

@@ -16,17 +16,17 @@ gulp.task('css', function () {
             importFrom: '/home/spacedoc/projects/blog/web/themes/custom/blogtheme/src/css/variables.css',
         }),
         autoprefixer({grid: true}),
-        gradients,
-        variables()
+        variables(),
+        gradients
     ];
 
-    return gulp.src('src/css/*.css')
+    return gulp.src('src/css/**/*.css')
     .pipe(postcss(plugins))
     .pipe(gulp.dest('build'));
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/css/*.css', gulp.series('css'));
+    gulp.watch('src/css/**/*.css', gulp.series('css'));
 });
 
 function defaultTask(cb) {

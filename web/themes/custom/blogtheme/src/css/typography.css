@@ -8,5 +8,6 @@ code {
 
 a, a:visited {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--rich-black);
 }

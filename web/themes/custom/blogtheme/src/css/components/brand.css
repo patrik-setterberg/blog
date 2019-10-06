@@ -1,0 +1,61 @@
+.container--brand {
+    display: flex;
+    justify-content: center;
+}
+
+.brand {
+    color: var(--baby-powder);
+    font-weight: 600;    
+    padding-left: 0.5rem;
+    border-left: 3px solid rgba(17, 46, 56, 0.1);
+}
+
+.brand > :not(.brand__slogan) {
+    font-size: 2.5rem;
+}
+
+.brand__hash,
+.brand__brace,
+.brand__slogan {
+    color: var(--color-header-symbols);
+}
+
+.brand__hash,
+.brand__patrik,
+.brand__dot {
+    padding-right: 0.2rem;
+}
+
+
+.brand__dot {
+    color: orange;
+}
+
+.brand__style {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+
+.brand__slogan {
+    display: block;
+    margin-left: 1.9rem;
+    font-size: 1rem;
+}
+
+.brand__slogan-text {
+    color: var(--baby-powder);
+    margin: 0 0.1rem;
+}
+
+@media (--at-least-desktop) {
+
+    .brand > :not(.brand__slogan) {
+        font-size: 3rem;
+    }
+
+    .brand__slogan {
+        margin-left: 2.3rem;
+        font-size: 1.2rem;
+    }
+}
