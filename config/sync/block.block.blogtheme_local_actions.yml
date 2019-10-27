@@ -9,7 +9,7 @@ _core:
 id: blogtheme_local_actions
 theme: blogtheme
 region: content
-weight: -20
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

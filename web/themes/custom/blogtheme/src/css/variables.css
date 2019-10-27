@@ -1,11 +1,11 @@
 /* Media variables */
 @custom-media --mobile only screen and (max-width: 767px);
 @custom-media --tablet only screen and (min-width: 768px) and (max-width: 1023px);
-@custom-media --desktop-small only screen and (min-width: 1024px) and (max-width: 1359px);
-@custom-media --desktop-large only screen and (min-width: 1360px);
+@custom-media --desktop only screen and (min-width: 1024px);
+/* @custom-media --desktop-large only screen and (min-width: 1360px); */
 
 @custom-media --at-least-tablet only screen and (min-width: 768px);
-@custom-media --at-least-desktop only screen and (min-width: 1024px);
+/* @custom-media --at-least-desktop only screen and (min-width: 1024px); */
 
 :root {
     /* Layout */
@@ -20,11 +20,19 @@
     /* Colors: https://mycolor.space/?hex=%2300171F&sub=1 */
     --gun-metal: #233445;
     --deep-saffron: #f2962f;
+    --dark-tangerine: #fca311;
+    --princeton-orange: #fb8b24;
     --eerie-black: #1a1f16;
     --rich-black: #00171f;
     --rich-black-dark: #000B0F;
     --rich-black-light: #112E38;
+    --rich-black2: #001011;
     --baby-powder: #fdfffc;
+    --yankees-blue: #1d2d44;
+    
+
+    --white-smoke: #f7f7f2;
+    --platinum: #e5e7e6;
 
     --color-text-main: var(--eerie-black);
     --color-header-background: var(--rich-black);
@@ -41,14 +49,15 @@
     }   
 }
 
-@media (--desktop-small) {
+@media (--desktop) {
+    :root {
+        --container-width: 964px;
+    }
+}
+/*
+@media (--desktop-large) {
     :root {
         --container-width: 1024px;
     }
 }
-
-@media (--desktop-large) {
-    :root {
-        --container-width: 1300px;
-    }
-}
+*/

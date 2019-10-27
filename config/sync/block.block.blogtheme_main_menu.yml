@@ -1,6 +1,6 @@
 uuid: 6826e07d-74df-4fda-9caa-abe799534aef
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -13,7 +13,7 @@ _core:
 id: blogtheme_main_menu
 theme: blogtheme
 region: header
-weight: -7
+weight: -3
 provider: null
 plugin: 'system_menu_block:main'
 settings:

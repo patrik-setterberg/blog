@@ -6,5 +6,4 @@
 @import "utilities.css";
 
 /* components */
-@import "components/brand.css";
-@import "components/main_menu.css";
+@import "components/header.css";

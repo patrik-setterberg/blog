@@ -11,7 +11,7 @@ _core:
 id: blogtheme_messages
 theme: blogtheme
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

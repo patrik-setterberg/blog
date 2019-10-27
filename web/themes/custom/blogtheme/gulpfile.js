@@ -2,6 +2,7 @@ let gulp = require('gulp');
 let postcss = require('gulp-postcss');
 let customMedia = require('postcss-custom-media');
 let postcssImport = require('postcss-import');
+let extend = require('postcss-extend-rule');
 let autoprefixer = require('autoprefixer');
 let nesting = require('postcss-nesting');
 let variables = require('postcss-css-variables');
@@ -12,6 +13,7 @@ gulp.task('css', function () {
     let plugins = [
         postcssImport({ root: '/src/css/' }),
         nesting,
+        extend,
         customMedia({
             importFrom: '/home/spacedoc/projects/blog/web/themes/custom/blogtheme/src/css/variables.css',
         }),

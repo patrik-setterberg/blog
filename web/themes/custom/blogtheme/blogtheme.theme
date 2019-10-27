@@ -1,0 +1,20 @@
+<?php
+/**
+ * Implements hook_form_alter
+ */
+function blogtheme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  add_placeholders($form);
+}
+
+
+/**
+ * Add placeholders to suitable form elements -> Search (can add more.)
+ */
+function add_placeholders(&$element) {
+  if(isset($element['#type']) && $element['#type'] == 'search') {
+    $element['#attributes']['placeholder'] = $element['#title'] . ' posts';
+  }
+  foreach(\Drupal\Core\Render\Element::children($element) as $key) {
+    add_placeholders($element[$key]);
+  }
+}

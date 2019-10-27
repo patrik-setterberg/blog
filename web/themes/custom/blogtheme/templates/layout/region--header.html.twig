@@ -13,15 +13,13 @@
  */
 #}
 {% if content %}
-  <div{{ attributes.addClass('site-header__stripe') }}></div>
-  <div class="container container--brand">
+  <div{{ attributes.addClass('container') }}>
     <div class="brand">
-      <span class="brand__hash">#</span><span class="brand__patrik">patrik</span><span class="brand__dot">.</span><span class="brand__style">style</span><span class="brand__brace">{</span><span class="brand__slogan">content: '<span class="brand__slogan-text">devblog and portfolio maybe</span>';</span><span class="brand__brace">}</span>
+      <span class="brand__patrik">patrik</span><span class="brand__dot">.</span><span class="brand__style">style</span>
     </div>
-  </div>
-  <div class="container">
-    {# Main menu in here. #}
-    {{ content }} 
+    <div class="header-nav">
+      {{ content }} 
+    </div>
   </div>
 {% endif %}
 

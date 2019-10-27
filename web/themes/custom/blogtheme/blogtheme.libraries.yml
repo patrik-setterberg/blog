@@ -6,4 +6,5 @@ global-styling:
 fonts:
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700': { external: true }
+      '//fonts.googleapis.com/css?family=Roboto:400,400i,500,600,700': { external: true }
+      '//fonts.googleapis.com/css?family=Roboto+Mono': { external: true }

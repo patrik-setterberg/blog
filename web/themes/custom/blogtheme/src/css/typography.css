@@ -3,11 +3,57 @@ body {
 }
 
 code {
+    display: inline-block;
     font-family: var(--font-mono);
+    color: var(--rich-black);
+    background: radial-gradient(at top left, #fff9f9, ease-in-out, #f4f4f4);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+    border: 2px solid var(--rich-black-light);
+}
+
+ul {
+    list-style-type: none;
 }
 
 a, a:visited {
     text-decoration: none;
     font-weight: 600;
     color: var(--rich-black);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+article h2 {
+    font-weight: 600;
+    display: inline-block;
+    /*
+    &::before {
+        content: '#';
+    }
+
+    &::before {
+        color: var(--rich-black-light);
+    }
+    */
+}
+
+pre {
+    display: block;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid var(--rich-black-light);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    max-width: 100%;
+    color: var(--rich-black);
+    break-inside: avoid;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow: auto;
+    word-wrap: break-word;   
 }
