@@ -18,19 +18,11 @@
     display: flex;
     align-items: center;
     color: #E7DFC6;
-    font-weight: 600;    
-    font-size: 2.5rem;    
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
 }
-/*
-.brand::before {
-    content: '';
-    display: inline-block;
-    background: url('../images/blocks.svg');
-    width: 250px;
-    height: 50px;
 
-}
-*/
 .brand__patrik,
 .brand__dot {
     padding-right: 0.2rem;
@@ -47,7 +39,6 @@
 
 .brand__style {
     color: var(--baby-powder);
-    text-decoration: underline #E7DFC6;
 }
 
 @media (--tablet) {
@@ -71,10 +62,6 @@
     justify-content: space-between;
 }
 
-.header-search {
-    
-}
-
 .header-search form  {
     display: flex;
 }
@@ -84,7 +71,7 @@
     background-color: var(--rich-black2);
     color: rgba(231, 223, 198, 0.8);
     font-size: 1rem;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.3rem 0.3rem 1rem;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border: 1px solid rgba(231, 223, 198, 0.4);
@@ -96,8 +83,9 @@
 }
 
 .header-search input.form-search:focus {
-    background: url('../src/assets/icons/magnifying-glass.svg') no-repeat 0.5rem var(--rich-black);
-    padding: 0.3rem 1rem 0.3rem 2rem;
+    /* Get a different magnifying glass (one that doesn't require being credited) */
+    background: url('../src/assets/icons/magnifying-glass.svg') no-repeat 0.7rem var(--rich-black);
+    padding: 0.3rem 1rem 0.3rem 2.3rem;
     color: rgba(231, 223, 198, 1);
     border: 1px solid rgba(231, 223, 198, 0.6);
 }
@@ -114,20 +102,21 @@ input.form-search:focus::placeholder {
     color: rgba(231, 223, 198, 0);
 }
 
+/* At some point maybe create a button component with basic button styles that can be tweaked in contexts, e.g. this one */
 .header-search input.button {
-    color: rgba(231, 223, 198, 0.7);
-    background-color: var(--rich-black-light);
-    padding: 0.3rem 1rem;
+    color: var(--rich-black-light);
+    background: linear-gradient(to bottom right, orange, ease, darkorange);
+    padding: 0.3rem 1rem 0.3rem 0.8rem;
     margin-left: 0.3rem;
-    font-size: 1rem;    
+    font-size: 1rem;
     border: 1px solid rgba(231, 223, 198, 0.4);
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    transition: background-color 0.1s linear;
+    font-weight: 500;
 }
 
 .header-search input.button:hover {
-    background-color: #2274A5;
+    background: #2274A5;
     color: rgba(231, 223, 198, 1);
     border: 1px solid rgba(231, 223, 198, 0.6);
 }
@@ -151,7 +140,12 @@ input.form-search:focus::placeholder {
         flex-direction: row;
     }
     .header-search input.form-search {
-        width: 300px;
+        width: 160px;
+        transition: width 0.1s ease-out;
+    }
+
+    .header-search input.form-search:focus {
+        width: 220px;
     }
 
 }

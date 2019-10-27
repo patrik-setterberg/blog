@@ -63,7 +63,7 @@ article.contextual-region {
     display: block;
     width: 100%;
     height: 100px;
-    background: #f2962f;
+    background: linear-gradient(to bottom right, hsl(38.82, 100%, 50%), hsl(38.72, 100%, 50%) 9.99%, hsl(38.42, 100%, 50%) 19.07%, hsl(37.96, 100%, 50%) 27.44%, hsl(37.39, 100%, 50%) 35.26%, hsl(36.72, 100%, 50%) 42.72%, hsl(36, 100%, 50%) 50%, hsl(35.27, 100%, 50%) 57.28%, hsl(34.56, 100%, 50%) 64.74%, hsl(33.93, 100%, 50%) 72.56%, hsl(33.41, 100%, 50%) 80.93%, hsl(33.07, 100%, 50%) 90.01%, hsl(32.94, 100%, 50%));
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -75,7 +75,7 @@ article.contextual-region {
 
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 code {
     display: inline-block;
@@ -169,19 +169,10 @@ pre {
     display: flex;
     align-items: center;
     color: #E7DFC6;
-    font-weight: 600;    
-    font-size: 2.5rem;    
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
 }
-/*
-.brand::before {
-    content: '';
-    display: inline-block;
-    background: url('../images/blocks.svg');
-    width: 250px;
-    height: 50px;
-
-}
-*/
 .brand__patrik,
 .brand__dot {
     padding-right: 0.2rem;
@@ -195,8 +186,6 @@ pre {
 }
 .brand__style {
     color: #fdfffc;
-    -webkit-text-decoration: underline #E7DFC6;
-            text-decoration: underline #E7DFC6;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .brand {
@@ -219,9 +208,6 @@ pre {
     flex-direction: column;
     justify-content: space-between;
 }
-.header-search {
-    
-}
 .header-search form  {
     display: flex;
 }
@@ -230,7 +216,7 @@ pre {
     background-color: #001011;
     color: rgba(231, 223, 198, 0.8);
     font-size: 1rem;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.3rem 0.3rem 1rem;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     border: 1px solid rgba(231, 223, 198, 0.4);
@@ -240,8 +226,9 @@ pre {
     border: 1px solid rgba(231, 223, 198, 0.6);
 }
 .header-search input.form-search:focus {
-    background: url('../src/assets/icons/magnifying-glass.svg') no-repeat 0.5rem #00171f;
-    padding: 0.3rem 1rem 0.3rem 2rem;
+    /* Get a different magnifying glass (one that doesn't require being credited) */
+    background: url('../src/assets/icons/magnifying-glass.svg') no-repeat 0.7rem #00171f;
+    padding: 0.3rem 1rem 0.3rem 2.3rem;
     color: rgba(231, 223, 198, 1);
     border: 1px solid rgba(231, 223, 198, 0.6);
 }
@@ -290,19 +277,20 @@ input.form-search:focus::-ms-input-placeholder {
 input.form-search:focus::placeholder {
     color: rgba(231, 223, 198, 0);
 }
+/* At some point maybe create a button component with basic button styles that can be tweaked in contexts, e.g. this one */
 .header-search input.button {
-    color: rgba(231, 223, 198, 0.7);
-    background-color: #112E38;
-    padding: 0.3rem 1rem;
+    color: #112E38;
+    background: linear-gradient(to bottom right, hsl(38.82, 100%, 50%), hsl(38.6, 100%, 50%) 5.79%, hsl(38.23, 100%, 50%) 10.88%, hsl(37.73, 100%, 50%) 15.63%, hsl(37.14, 100%, 50%) 20.37%, hsl(36.48, 100%, 50%) 25.46%, hsl(35.78, 100%, 50%) 31.25%, hsl(35.09, 100%, 50%) 38.08%, hsl(34.43, 100%, 50%) 46.3%, hsl(33.84, 100%, 50%) 56.25%, hsl(33.37, 100%, 50%) 68.29%, hsl(33.05, 100%, 50%) 82.75%, hsl(32.94, 100%, 50%));
+    padding: 0.3rem 1rem 0.3rem 0.8rem;
     margin-left: 0.3rem;
-    font-size: 1rem;    
+    font-size: 1rem;
     border: 1px solid rgba(231, 223, 198, 0.4);
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    transition: background-color 0.1s linear;
+    font-weight: 500;
 }
 .header-search input.button:hover {
-    background-color: #2274A5;
+    background: #2274A5;
     color: rgba(231, 223, 198, 1);
     border: 1px solid rgba(231, 223, 198, 0.6);
 }
@@ -323,7 +311,12 @@ input.form-search:focus::placeholder {
         flex-direction: row;
     }
     .header-search input.form-search {
-        width: 300px;
+        width: 160px;
+        transition: width 0.1s ease-out;
+    }
+
+    .header-search input.form-search:focus {
+        width: 220px;
     }
 
 }

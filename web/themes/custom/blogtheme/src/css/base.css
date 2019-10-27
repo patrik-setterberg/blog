@@ -29,7 +29,7 @@ article.contextual-region {
     display: block;
     width: 100%;
     height: 100px;
-    background: var(--deep-saffron);
+    background: linear-gradient(to bottom right, orange, ease-in-out, darkorange);
 }   
 
 @media (--tablet) {
