@@ -70,7 +70,7 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes.addClass('post-teaser') }}>
+<article{{ attributes.addClass('article-teaser') }}>
 
   {{ title_prefix }}
   {% if not page %}
@@ -84,7 +84,8 @@
     <footer>
       {{ author_picture }}
       <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {% set createdDate = node.getCreatedTime|format_date('long') %}
+        {% trans %}Posted {{ createdDate }}.{% endtrans %}
         {{ metadata }}
       </div>
     </footer>

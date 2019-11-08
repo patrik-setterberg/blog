@@ -1,0 +1,16 @@
+%article-shared {
+
+    & h2 {
+        font-size: 3rem;
+    }
+
+    & a:hover {
+        color: var(--astronaut-blue);
+    }
+}
+
+.article-teaser {
+    @extend %article-shared;
+
+    margin-top: 1rem;
+}

@@ -14,12 +14,18 @@
 #}
 {% if content %}
   <div{{ attributes.addClass('container') }}>
+    <nav class="header-nav" role="navigation">
+      
+      <input id="toggler" type="checkbox" />
+      
+      <div id="header-nav__menu">
+          {{ content }}
+      </div>
+    </nav>
     <div class="brand">
-      <span class="brand__patrik">patrik</span><span class="brand__dot">.</span><span class="brand__style">style</span>
+      <span class="brand__text"><span class="brand__patrik">patrik</span><span class="brand__dot">.</span><span class="brand__style">style</span></span>
     </div>
-    <div class="header-nav">
-      {{ content }} 
-    </div>
+    
   </div>
 {% endif %}
 
